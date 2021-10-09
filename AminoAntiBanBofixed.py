@@ -22,7 +22,7 @@ content = open("antiban_text.txt").read()
 
 if select == "1":
     try:
-        client.edit_profile(ndc_Id=ndc_Id, content=content)
+        client.editprofile(ndcId=ndcId, content=content)
         print("AntiBan Onned!")
     except Exception as e:
         print(e)
