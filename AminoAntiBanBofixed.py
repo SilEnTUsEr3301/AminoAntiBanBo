@@ -30,7 +30,7 @@ if select == "1":
 elif select == "2":
     try:
         content = "github.com/LilZevi"
-        client.edit_profile(ndc_Id=ndc_Id, content=content)
+        client.edit_profile(ndcId=ndcId, content=content)
         print("AntiBan Offed")
     except Exception as e:
         print(e)
