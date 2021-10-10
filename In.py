@@ -35,5 +35,5 @@ def socketRoot():
 			print("Socket updated")
 			j=0
 		j=j+1
-		time.sleep(1)
+		time.sleep(0)
 socketRoot()			
