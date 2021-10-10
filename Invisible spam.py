@@ -17,36 +17,15 @@ print(cid)
 subclient=amino.SubClient(comId=cid,profile=client.profile)
 
 print("Joined community")
-   			
-@client.event("on_group_member_join")
-def on_group_member_join(data):
-	while True:
-			subclient.send_message(chatId=data.message.chatId,message="Spamming GC",messageType=109)
-			print(f"Join spam started")
-				
-@client.event("on_group_member_leave")
-def on_group_member_leave(data):
-	while True:
-			subclient.send_message(chatId=data.message.chatId,message="Spamming GC",messageType=109)
-			print(f"Leave spam started")
-			
+
+
+
 @client.event("on_text_message")
 def on_text_message(data):
 	while True:
-			subclient.send_message(chatId=data.message.chatId,message="Spamming GC",messageType=109)
+			subclient.send_message(chatId=data.message.chatId,message="lol fuck you",messageType=109)
 			print(f"Text spam started")
 
-@client.event("on_sticker_message")
-def on_sticker_message(data):
-	while True:
-			subclient.send_message(chatId=data.message.chatId,message="Spamming GC",messageType=109)
-			print(f"Sticker spam started")
-			
-@client.event("on_image_message")
-def on_image_message(data):
-	while True:
-			subclient.send_message(chatId=data.message.chatId,message="Spamming GC",messageType=109)
-			print(f"Image spam started")
 
 print("Spam Bot started")			
 def socketRoot():
